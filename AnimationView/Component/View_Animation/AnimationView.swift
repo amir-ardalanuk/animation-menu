@@ -70,6 +70,7 @@ class AnimationView: UIView , Connectable {
     func expandAnimate(config:AnimationConfig){
         self.isHidden = false
         self.state = .animating
+        self.lblTitle.isHidden = true
         UIView.animate(withDuration: 0.5, delay:config.firstDelay   , options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.transform = CGAffineTransform.init(translationX: 0, y:  config.y)
         },completion: {state in

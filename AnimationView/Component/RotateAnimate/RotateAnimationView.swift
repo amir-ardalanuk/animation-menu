@@ -20,7 +20,7 @@ class RotateAnimationView : CustomView , Connectable ,RotateAnimate {
     }
     
     var state : State = .normal
-    var onTapRunner: (()->Void)?
+    var onTapRunner: (()->Bool)?
     
     @IBInspectable var rotate: CGFloat = -15
     
@@ -42,8 +42,12 @@ class RotateAnimationView : CustomView , Connectable ,RotateAnimate {
         self.clipsToBounds = true
         
         self.tap = {
+            
+            guard  (self.onTapRunner?() ?? false) == true else {
+                return
+            }
+            
             self.tapHandler()
-            self.onTapRunner?()
         }
     }
     

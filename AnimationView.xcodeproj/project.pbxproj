@@ -62,7 +62,6 @@
 				F4F4F3C6240CFAC000636764 /* LaunchScreen.storyboard */,
 				F4F4F3BD240CFABD00636764 /* SceneDelegate.swift */,
 				F4F4F3BB240CFABD00636764 /* AppDelegate.swift */,
-				F4F4F3C9240CFAC000636764 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -103,6 +102,7 @@
 		F4F4F3BA240CFABD00636764 /* AnimationView */ = {
 			isa = PBXGroup;
 			children = (
+				F4F4F3C9240CFAC000636764 /* Info.plist */,
 				F432906C240D6F9C00E327AC /* scene */,
 				F432906B240D6F7500E327AC /* Resources */,
 				F4F4F3DE240D017600636764 /* Component */,

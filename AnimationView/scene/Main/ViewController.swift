@@ -16,9 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var rotateView : RotateAnimationView!{
         didSet{
             self.rotateView.onTapRunner = {
+                let count = self.animateObjectArray.reduce(0,{ (a,b) -> Int in
+                    let curr =  b.state == .animating ? 1 : 0
+                    return curr + a
+                })
+                guard count == 0 else {return false}
                 self.animateObjectArray.forEach { (view) in
                     view.animate()
                 }
+                return true
             }
         }
     }
