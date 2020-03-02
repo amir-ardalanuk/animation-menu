@@ -13,6 +13,15 @@
 		F4F4F3C3240CFABD00636764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4F3C1240CFABD00636764 /* Main.storyboard */; };
 		F4F4F3C5240CFAC000636764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4F3C4240CFAC000636764 /* Assets.xcassets */; };
 		F4F4F3C8240CFAC000636764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4F3C6240CFAC000636764 /* LaunchScreen.storyboard */; };
+		F4F4F3D0240CFBAF00636764 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F3CF240CFBAF00636764 /* Connectable.swift */; };
+		F4F4F3D2240CFBD900636764 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F3D1240CFBD900636764 /* AnimationView.swift */; };
+		F4F4F3D4240CFBF700636764 /* AnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F4F3D3240CFBF700636764 /* AnimationView.xib */; };
+		F4F4F3D6240CFE7800636764 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F3D5240CFE7800636764 /* CustomView.swift */; };
+		F4F4F3D8240CFF1F00636764 /* RotateAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F3D7240CFF1F00636764 /* RotateAnimationView.swift */; };
+		F4F4F3DB240CFF4000636764 /* RotateAnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F4F3DA240CFF4000636764 /* RotateAnimationView.xib */; };
+		F4F4F3E0240D019600636764 /* AnimationViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F3DF240D019600636764 /* AnimationViewConfig.swift */; };
+		F4F4F3E2240D023200636764 /* RotateAnimationViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F3E1240D023200636764 /* RotateAnimationViewConfig.swift */; };
+		F4F4F3E5240D03E400636764 /* RotateAnimateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4F3E4240D03E400636764 /* RotateAnimateProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		F4F4F3C4240CFAC000636764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4F4F3C7240CFAC000636764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4F4F3C9240CFAC000636764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F4F3CF240CFBAF00636764 /* Connectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectable.swift; sourceTree = "<group>"; };
+		F4F4F3D1240CFBD900636764 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		F4F4F3D3240CFBF700636764 /* AnimationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationView.xib; sourceTree = "<group>"; };
+		F4F4F3D5240CFE7800636764 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		F4F4F3D7240CFF1F00636764 /* RotateAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAnimationView.swift; sourceTree = "<group>"; };
+		F4F4F3DA240CFF4000636764 /* RotateAnimationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RotateAnimationView.xib; sourceTree = "<group>"; };
+		F4F4F3DF240D019600636764 /* AnimationViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewConfig.swift; sourceTree = "<group>"; };
+		F4F4F3E1240D023200636764 /* RotateAnimationViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAnimationViewConfig.swift; sourceTree = "<group>"; };
+		F4F4F3E4240D03E400636764 /* RotateAnimateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAnimateProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F432906B240D6F7500E327AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4F3CF240CFBAF00636764 /* Connectable.swift */,
+				F4F4F3C6240CFAC000636764 /* LaunchScreen.storyboard */,
+				F4F4F3BD240CFABD00636764 /* SceneDelegate.swift */,
+				F4F4F3BB240CFABD00636764 /* AppDelegate.swift */,
+				F4F4F3C9240CFAC000636764 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F432906C240D6F9C00E327AC /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				F432906D240D705F00E327AC /* Main */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
+		F432906D240D705F00E327AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4F3BF240CFABD00636764 /* ViewController.swift */,
+				F4F4F3C1240CFABD00636764 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		F4F4F3AF240CFABD00636764 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +103,59 @@
 		F4F4F3BA240CFABD00636764 /* AnimationView */ = {
 			isa = PBXGroup;
 			children = (
-				F4F4F3BB240CFABD00636764 /* AppDelegate.swift */,
-				F4F4F3BD240CFABD00636764 /* SceneDelegate.swift */,
-				F4F4F3BF240CFABD00636764 /* ViewController.swift */,
-				F4F4F3C1240CFABD00636764 /* Main.storyboard */,
+				F432906C240D6F9C00E327AC /* scene */,
+				F432906B240D6F7500E327AC /* Resources */,
+				F4F4F3DE240D017600636764 /* Component */,
 				F4F4F3C4240CFAC000636764 /* Assets.xcassets */,
-				F4F4F3C6240CFAC000636764 /* LaunchScreen.storyboard */,
-				F4F4F3C9240CFAC000636764 /* Info.plist */,
 			);
 			path = AnimationView;
+			sourceTree = "<group>";
+		};
+		F4F4F3D9240CFF2800636764 /* View_Rotate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View_Rotate;
+			sourceTree = "<group>";
+		};
+		F4F4F3DC240D012A00636764 /* View_Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4F3D1240CFBD900636764 /* AnimationView.swift */,
+				F4F4F3D3240CFBF700636764 /* AnimationView.xib */,
+				F4F4F3DF240D019600636764 /* AnimationViewConfig.swift */,
+			);
+			path = View_Animation;
+			sourceTree = "<group>";
+		};
+		F4F4F3DD240D016C00636764 /* View_Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4F3D5240CFE7800636764 /* CustomView.swift */,
+			);
+			path = View_Custom;
+			sourceTree = "<group>";
+		};
+		F4F4F3DE240D017600636764 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4F3E3240D03CE00636764 /* RotateAnimate */,
+				F4F4F3DD240D016C00636764 /* View_Custom */,
+				F4F4F3DC240D012A00636764 /* View_Animation */,
+				F4F4F3D9240CFF2800636764 /* View_Rotate */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F4F4F3E3240D03CE00636764 /* RotateAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4F3E1240D023200636764 /* RotateAnimationViewConfig.swift */,
+				F4F4F3D7240CFF1F00636764 /* RotateAnimationView.swift */,
+				F4F4F3DA240CFF4000636764 /* RotateAnimationView.xib */,
+				F4F4F3E4240D03E400636764 /* RotateAnimateProtocol.swift */,
+			);
+			path = RotateAnimate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F4F3C8240CFAC000636764 /* LaunchScreen.storyboard in Resources */,
+				F4F4F3D4240CFBF700636764 /* AnimationView.xib in Resources */,
 				F4F4F3C5240CFAC000636764 /* Assets.xcassets in Resources */,
 				F4F4F3C3240CFABD00636764 /* Main.storyboard in Resources */,
+				F4F4F3DB240CFF4000636764 /* RotateAnimationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F4F3C0240CFABD00636764 /* ViewController.swift in Sources */,
+				F4F4F3D8240CFF1F00636764 /* RotateAnimationView.swift in Sources */,
+				F4F4F3D2240CFBD900636764 /* AnimationView.swift in Sources */,
 				F4F4F3BC240CFABD00636764 /* AppDelegate.swift in Sources */,
+				F4F4F3D6240CFE7800636764 /* CustomView.swift in Sources */,
+				F4F4F3E0240D019600636764 /* AnimationViewConfig.swift in Sources */,
+				F4F4F3D0240CFBAF00636764 /* Connectable.swift in Sources */,
 				F4F4F3BE240CFABD00636764 /* SceneDelegate.swift in Sources */,
+				F4F4F3E5240D03E400636764 /* RotateAnimateProtocol.swift in Sources */,
+				F4F4F3E2240D023200636764 /* RotateAnimationViewConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

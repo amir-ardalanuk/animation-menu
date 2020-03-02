@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFR-xP-L2b" customClass="RotateAnimationView" customModule="AnimationView" customModuleProvider="target">
+                                <rect key="frame" x="169.5" y="410.5" width="75" height="75"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-plus-100" translatesAutoresizingMaskIntoConstraints="NO" id="FKo-BR-ZQh">
+                                        <rect key="frame" x="16" y="16" width="43" height="43"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="FKo-BR-ZQh" firstAttribute="leading" secondItem="dFR-xP-L2b" secondAttribute="leading" constant="16" id="5jd-cJ-tao"/>
+                                    <constraint firstAttribute="trailing" secondItem="FKo-BR-ZQh" secondAttribute="trailing" constant="16" id="JPh-7g-PRn"/>
+                                    <constraint firstAttribute="height" constant="75" id="V2D-rg-TKU"/>
+                                    <constraint firstItem="FKo-BR-ZQh" firstAttribute="top" secondItem="dFR-xP-L2b" secondAttribute="top" constant="16" id="gKv-yr-aOD"/>
+                                    <constraint firstAttribute="bottom" secondItem="FKo-BR-ZQh" secondAttribute="bottom" constant="16" id="nSt-jq-TgM"/>
+                                    <constraint firstAttribute="width" secondItem="dFR-xP-L2b" secondAttribute="height" multiplier="1:1" id="ncR-DD-Iex"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="38"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="-60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dFR-xP-L2b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CC0-JZ-wL9"/>
+                            <constraint firstItem="dFR-xP-L2b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u0I-uV-rjf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="rotateView" destination="dFR-xP-L2b" id="q2i-Jq-FM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-plus-100" width="100" height="100"/>
+    </resources>
+</document>
